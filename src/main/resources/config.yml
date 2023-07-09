@@ -1,7 +1,4 @@
-MONGODB_USERNAME: "login"
-MONGODB_PASSWORD: "password"
-MONGODB_HOST: "localhost"
-MONGODB_PORT: 27017
+MONGODB_CONNECTION_STRING: "mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority"
 MONGODB_DATABASE: "test"
 MONGODB_COLLECTION: "test"
-SAVE_INTERVAL: 6 # in hours
+SAVE_INTERVAL: 1440 # in minutes (1440 = 24 hours)
