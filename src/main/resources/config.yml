@@ -1,1 +1,7 @@
-# A journey of 1,000 lines starts with a single char
+MONGODB_USERNAME: "login"
+MONGODB_PASSWORD: "password"
+MONGODB_HOST: "localhost"
+MONGODB_PORT: 27017
+MONGODB_DATABASE: "test"
+MONGODB_COLLECTION: "test"
+SAVE_INTERVAL: 6 # in hours

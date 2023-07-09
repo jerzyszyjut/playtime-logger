@@ -2,19 +2,32 @@ main: ${PACKAGE}.${NAME}
 name: ${NAME}
 version: "${VERSION}"
 api-version: "1.16"
-author: AUTHOR
-description: DESCRIPTION
+author: Jerzy Szyjut
+description: A simple plugin that logs the playtime of players and saves it to the MongoDB database
 commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
+  save:
+    description: Saves the playtime data
+    permission: playtimelogger.save
+  reload:
+      description: Reloads the config
+      permission: playtimelogger.reload
+  help:
+      description: Shows the help menu
+      permission: playtimelogger.help
 permissions:
-  example.test:
-    description: DESCRIPTION
-    default: true
-  example.*:
+  playtimelogger.save:
+    description: Saves the playtime data
+    default: false
+  playtimelogger.reload:
+    description: Reloads the config
+    default: op
+  playtimelogger.help:
+    description: Shows the help menu
+    default: op
+  playtimelogger.*:
     description: Grants all other permissions
     default: false
     children:
-      example.test: true
+      playtimelogger.save: true
+      playtimelogger.reload: true
+      playtimelogger.help: true

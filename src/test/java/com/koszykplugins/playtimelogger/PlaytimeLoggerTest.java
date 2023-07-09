@@ -1,4 +1,4 @@
-package com.crimsonwarpedcraft.exampleplugin;
+package com.koszykplugins.playtimelogger;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Copyright (c) Levi Muniz. All Rights Reserved.
  */
-public class ExamplePluginTest {
+public class PlaytimeLoggerTest {
 
   @Test
   public void onEnable() {
