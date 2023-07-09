@@ -8,7 +8,7 @@ commands:
   save-playtime:
     description: Saves the playtime data
     permission: playtimelogger.save
-  reload:
+  reload-playtime:
     description: Reloads the config
     permission: playtimelogger.reload
 permissions:

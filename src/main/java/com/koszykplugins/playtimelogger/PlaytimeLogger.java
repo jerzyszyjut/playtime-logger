@@ -32,7 +32,7 @@ public class PlaytimeLogger extends JavaPlugin {
 
   private void registerCommands() {
     getCommand("save-playtime").setExecutor(new SavePlaytime(this));
-    getCommand("reload").setExecutor(new Reload(this));
+    getCommand("reload-playtime").setExecutor(new Reload(this));
   }
 
   private void registerSavePlaytimeRunnable() {
